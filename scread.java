@@ -18,7 +18,7 @@ public class scread {
 	
 	public static void main(String[] args) {
 		
-// There are 3 parameters expected from this program
+// The program expects 3 input parameters
 //		1. HDFS path where all the Schema files are present
 //		2. HDFS path where you want to save the HQL files to 
 //		3. HDFS path where the data files are present for loading into HIVE 
@@ -64,8 +64,8 @@ public class scread {
 		ArrayList<String> filepaths = new ArrayList<String>();
 		ArrayList<String> hqlfpath  = new ArrayList<String>();
 		ArrayList<String> databases = new ArrayList<String>();
-		ArrayList<String> tables 	= new ArrayList<String>();
-		ArrayList<String> hqlwrite	= new ArrayList<String>();
+		ArrayList<String> tables    = new ArrayList<String>();
+		ArrayList<String> hqlwrite  = new ArrayList<String>();
 		
 		String inpfile, opfile, createdb, usedb, createtb, loaddata;
 			   inpfile= opfile= createdb= usedb= createtb= loaddata="";
@@ -115,7 +115,7 @@ public class scread {
 		
 		System.out.println("");
 		System.out.println("");
-		System.out.println("Processing file with Database: " + databases.get(i) + "		Table : " + tables.get(i) +"........");
+		System.out.println("Processing file with Database: " + databases.get(i) + "	Table : " + tables.get(i) +"........");
 		System.out.println("");
 		System.out.println("");
 			
